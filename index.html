@@ -13,138 +13,101 @@
 
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
+            line-height: 1.4;
             color: #333;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
-            padding: 20px;
+            background: white;
+            font-size: 12px;
         }
 
         .container {
-            max-width: 900px;
+            max-width: 210mm;
             margin: 0 auto;
             background: white;
-            border-radius: 15px;
-            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
-            overflow: hidden;
+            padding: 10mm;
         }
 
         .header {
-            background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+            background: #2c3e50;
             color: white;
-            padding: 40px;
+            padding: 15px;
             text-align: center;
-            position: relative;
-        }
-
-        .header::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="50" cy="50" r="1" fill="%23ffffff" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>') repeat;
-        }
-
-        .header-content {
-            position: relative;
-            z-index: 1;
+            margin-bottom: 15px;
         }
 
         .name {
-            font-size: 2.5em;
+            font-size: 1.8em;
             font-weight: 700;
-            margin-bottom: 10px;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            margin-bottom: 5px;
         }
 
         .title {
-            font-size: 1.2em;
-            opacity: 0.9;
-            margin-bottom: 20px;
+            font-size: 1em;
+            margin-bottom: 10px;
         }
 
         .contact-info {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 15px;
-            margin-top: 20px;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 8px;
+            font-size: 0.85em;
         }
 
         .contact-item {
             display: flex;
             align-items: center;
-            gap: 10px;
+            gap: 5px;
             background: rgba(255,255,255,0.1);
-            padding: 10px 15px;
-            border-radius: 25px;
-            backdrop-filter: blur(10px);
+            padding: 5px 8px;
+            border-radius: 15px;
         }
 
         .section {
-            padding: 40px;
-        }
-
-        .section:nth-child(even) {
-            background: #f8f9fa;
+            margin-bottom: 15px;
         }
 
         .section-title {
-            font-size: 1.8em;
+            font-size: 1.2em;
             color: #2c3e50;
-            margin-bottom: 25px;
-            padding-bottom: 10px;
-            border-bottom: 3px solid #3498db;
-            position: relative;
-        }
-
-        .section-title::after {
-            content: '';
-            position: absolute;
-            bottom: -3px;
-            left: 0;
-            width: 50px;
-            height: 3px;
-            background: #e74c3c;
+            margin-bottom: 8px;
+            padding-bottom: 3px;
+            border-bottom: 2px solid #3498db;
         }
 
         .summary {
-            font-size: 1.1em;
-            line-height: 1.8;
+            font-size: 0.95em;
+            line-height: 1.4;
             color: #555;
             text-align: justify;
         }
 
         .experience-item {
-            margin-bottom: 30px;
-            padding: 25px;
-            background: white;
-            border-radius: 10px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
-            border-left: 4px solid #3498db;
+            margin-bottom: 12px;
+            padding: 8px;
+            border-left: 3px solid #3498db;
         }
 
         .job-title {
-            font-size: 1.3em;
+            font-size: 1em;
             font-weight: 600;
             color: #2c3e50;
-            margin-bottom: 5px;
+            margin-bottom: 2px;
         }
 
         .company-period {
             color: #7f8c8d;
             font-style: italic;
-            margin-bottom: 15px;
+            margin-bottom: 5px;
+            font-size: 0.9em;
         }
 
         .job-description {
             list-style: none;
+            font-size: 0.9em;
         }
 
         .job-description li {
-            margin-bottom: 8px;
-            padding-left: 20px;
+            margin-bottom: 3px;
+            padding-left: 15px;
             position: relative;
         }
 
@@ -153,44 +116,40 @@
             color: #3498db;
             position: absolute;
             left: 0;
+            font-size: 0.8em;
         }
 
         .education-item {
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            padding: 8px;
         }
 
         .degree {
-            font-size: 1.2em;
+            font-size: 1em;
             font-weight: 600;
             color: #2c3e50;
-            margin-bottom: 5px;
+            margin-bottom: 2px;
         }
 
         .university {
             color: #7f8c8d;
             font-style: italic;
+            font-size: 0.9em;
         }
 
         .skills-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 25px;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
         }
 
         .skill-category {
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            padding: 8px;
         }
 
         .skill-category h4 {
             color: #2c3e50;
-            margin-bottom: 15px;
-            font-size: 1.1em;
+            margin-bottom: 5px;
+            font-size: 0.95em;
         }
 
         .skill-list {
@@ -198,127 +157,110 @@
         }
 
         .skill-list li {
-            margin-bottom: 8px;
-            padding: 8px 12px;
+            margin-bottom: 3px;
+            padding: 3px 8px;
             background: #ecf0f1;
-            border-radius: 20px;
+            border-radius: 10px;
             display: inline-block;
-            margin-right: 5px;
-            font-size: 0.9em;
+            margin-right: 3px;
+            font-size: 0.8em;
         }
 
         .additional-info {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 15px;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 8px;
         }
 
         .info-item {
-            background: white;
-            padding: 15px;
-            border-radius: 10px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            padding: 8px;
             text-align: center;
-            border-top: 3px solid #27ae60;
+            border-top: 2px solid #27ae60;
+            font-size: 0.85em;
         }
 
         .info-item .icon {
-            font-size: 1.5em;
-            margin-bottom: 10px;
+            font-size: 1em;
+            margin-bottom: 3px;
         }
 
-        @media (max-width: 768px) {
-            .container {
-                margin: 10px;
-                border-radius: 10px;
-            }
-            
-            .header {
-                padding: 30px 20px;
-            }
-            
-            .name {
-                font-size: 2em;
-            }
-            
-            .section {
-                padding: 30px 20px;
-            }
-            
-            .contact-info {
-                grid-template-columns: 1fr;
-            }
+        footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 8px;
+            margin-top: 10px;
+            font-size: 0.85em;
         }
-                @media (max-width: 768px) {
-            .container {
-                margin: 10px;
-                border-radius: 10px;
-            }
-            
-            .header {
-                padding: 30px 20px;
-            }
-            
-            .name {
-                font-size: 2em;
-            }
-            
-            .section {
-                padding: 30px 20px;
-            }
-            
-            .contact-info {
-                grid-template-columns: 1fr;
-                gap: 10px;
-            }
-            
-            .contact-item {
-                padding: 8px 12px;
-                font-size: 0.9em;
-                border-radius: 20px;
-                min-height: auto;
-            }
-            
-            .contact-item span:first-child {
-                font-size: 1.1em;
-                min-width: 20px;
-            }
-            
-            /* تحسين النصوص الطويلة */
-            .contact-item span:last-child {
-                word-break: break-word;
+
+        /* Print Styles */
+        @media print {
+            body {
+                background: white !important;
+                font-size: 11px;
                 line-height: 1.3;
             }
-        }
-        
-        /* إضافة media query للهواتف الصغيرة جداً */
-        @media (max-width: 480px) {
-            .name {
-                font-size: 1.8em;
-                line-height: 1.2;
-            }
             
-            .title {
-                font-size: 1.1em;
-            }
-            
-            .contact-info {
-                margin-top: 15px;
-            }
-            
-            .contact-item {
-                padding: 6px 10px;
-                font-size: 0.85em;
-                gap: 8px;
+            .container {
+                max-width: none;
+                margin: 0;
+                padding: 5mm;
+                box-shadow: none;
             }
             
             .header {
-                padding: 25px 15px;
+                background: #2c3e50 !important;
+                color: white !important;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+                padding: 10px;
+                margin-bottom: 10px;
             }
             
             .section {
-                padding: 25px 15px;
+                margin-bottom: 10px;
+                page-break-inside: avoid;
             }
+            
+            .experience-item {
+                margin-bottom: 8px;
+                padding: 5px;
+                page-break-inside: avoid;
+            }
+            
+            .section-title {
+                border-bottom: 1px solid #3498db !important;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+            
+            .contact-info {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 5px;
+            }
+            
+            .skills-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 5px;
+            }
+            
+            .additional-info {
+                grid-template-columns: repeat(4, 1fr);
+                gap: 5px;
+            }
+            
+            footer {
+                background: #2c3e50 !important;
+                color: white !important;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+                padding: 5px;
+            }
+        }
+
+        @page {
+            size: A4;
+            margin: 10mm;
         }
     </style>
 </head>
@@ -336,11 +278,11 @@
                     </div>
                     <div class="contact-item">
                         <span>📞</span>
-                        <span>0555302839</span>
+                        <span>+20 128 832 8728</span>
                     </div>
                     <div class="contact-item">
                         <span>✉️</span>
-                        <span>marwanelsamman000@gmail.com</span>
+                        <span>elsmana18@gmail.com</span>
                     </div>
                     <div class="contact-item">
                         <span>🪪</span>
@@ -358,7 +300,7 @@
             </div>
         </header>
 
-<!--         <section class="section">
+        <section class="section">
             <h2 class="section-title">Professional Summary</h2>
             <p class="summary">
                 Experienced and reliable driver with over <strong>5 years</strong> of professional driving expertise in Dubai and Egypt. 
@@ -366,11 +308,40 @@
                 such as Al Arabi Motors, 4P, and Uber. Seeking a driving position in a reputable car rental office where I can 
                 utilize my skills to provide safe and efficient transportation services.
             </p>
-        </section> -->
+        </section>
 
-        <section class="section">
+        <!-- <section class="section">
             <h2 class="section-title">Work Experience</h2>
-            Experienced and reliable driver with over <strong>3 years</strong> of professional driving expertise in Dubai
+            
+            <div class="experience-item">
+                <h3 class="job-title">Professional Driver – Uber</h3>
+                <p class="company-period">Dubai, UAE | 2022 – 2024</p>
+                <ul class="job-description">
+                    <li>Provided safe and timely transportation services to customers across Dubai</li>
+                    <li>Maintained excellent customer service with high ratings and positive feedback</li>
+                    <li>Demonstrated strong knowledge of Dubai routes and traffic regulations</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <h3 class="job-title">Driver – 4P Company</h3>
+                <p class="company-period">Dubai, UAE | 2021 – 2022</p>
+                <ul class="job-description">
+                    <li>Delivered transportation services for staff and clients</li>
+                    <li>Ensured vehicle maintenance and compliance with safety standards</li>
+                    <li>Supported daily operations by handling logistics and deliveries</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <h3 class="job-title">Driver – Al Arabi Motors</h3>
+                <p class="company-period">Cairo, Egypt | 2020 – 2021</p>
+                <ul class="job-description">
+                    <li>Transported vehicles and customers safely between branches</li>
+                    <li>Assisted clients with inquiries and ensured satisfaction</li>
+                    <li>Gained experience in dealing with multinational clients</li>
+                </ul>
+            </div>
         </section>
 
         <section class="section">
@@ -379,7 +350,7 @@
                 <h3 class="degree">Bachelor's Degree in Management Information Systems (MIS)</h3>
                 <p class="university">2020 | Alexandria University, Egypt</p>
             </div>
-        </section>
+        </section> -->
 
         <section class="section">
             <h2 class="section-title">Core Skills</h2>
@@ -406,7 +377,7 @@
                     <h4>Languages:</h4>
                     <ul class="skill-list">
                         <li>Arabic (Native)</li>
-                        <li>English (Good)</li>
+                        <li>English (Fair)</li>
                     </ul>
                 </div>
             </div>
@@ -434,11 +405,9 @@
             </div>
         </section>
 
-        <footer style="background: #2c3e50; color: white; text-align: center; padding: 20px;">
+        <footer>
             <p><em>Ready to contribute to your team with dedication, professionalism, and extensive driving experience in the UAE market.</em></p>
         </footer>
     </div>
 </body>
-
 </html>
-
